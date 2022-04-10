@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadLayout">
+        <!--异常文字-->
+        <attr name="errorText" format="string" />
+        <!--空数据文字-->
+        <attr name="emptyText" format="string" />
+        <!--空数据图片-->
+        <attr name="emptyImage" format="reference" />
+        <attr name="errorImage" format="reference" />
+        <!--布局-->
+        <attr name="errorLayout" format="reference" />
+        <attr name="emptyLayout" format="reference" />
+        <attr name="loadingLayout" format="reference" />
+
+        <attr name="llTextColor" format="color" />
+        <attr name="llRetryTextColor" format="color" />
+        <attr name="imagePadding" format="dimension" />
+
+        <attr name="loadStatus" format="enum">
+            <enum name="loading" value="1" />
+            <enum name="empty" value="2" />
+            <enum name="error" value="3" />
+            <enum name="content" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <style name="LoadLayout" />
+
+    <style name="LoadLayout.Style">
+        <item name="emptyLayout">@layout/_layout_empty</item>
+        <item name="errorLayout">@layout/_layout_error</item>
+
+        <item name="errorText">加载失败...</item>
+        <item name="emptyText">暂无数据</item>
+        <item name="errorImage">@drawable/_loading_error</item>
+        <item name="emptyImage">@drawable/_loading_empty</item>
+        <item name="imagePadding">10dp</item>
+        <item name="llRetryTextColor">#999999</item>
+        <item name="llTextColor">#999999</item>
+    </style>
+
+</resources>
