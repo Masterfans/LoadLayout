@@ -45,6 +45,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 //    implementation project(path: ':layout')
-    implementation 'io.github.masterfans:loadlayout:1.0.0@aar'
+    implementation 'io.github.masterfans:loadLayout:1.0.0@aar'
 
 }
